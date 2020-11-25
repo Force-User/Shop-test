@@ -1,0 +1,53 @@
+.modal {
+  width: 500px;
+  height: 400px;
+  z-index: 2;
+  background-color: $color-light;
+  @include flex(center, flex-start);
+  flex-direction: column;
+  box-shadow: 5px 5px 5px 5px;
+  &-head {
+    background-color: $color-dark;
+    height: 70px;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    &__cross {
+      color: $color-light;
+      margin: 10px;
+    }
+  }
+  &-label {
+    margin-top: 50px;
+    @include flex(flex-start, center);
+    flex-direction: column;
+    &__input {
+      box-shadow: 0 0 3px 1px;
+      width: 300px;
+      height: 40px;
+      border-radius: 5px;
+    }
+  }
+  &__button {
+    margin-top: 5px;
+    padding: 5px 15px;
+    transition: 0.5s;
+    &:hover {
+      background-color: $color-dark;
+      color: $color-light;
+      border-radius: 5px;
+    }
+  }
+  &--background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include flex();
+    width: 100%;
+    height: 100vh;
+    background-color: $color-dark-opacity;
+    z-index: 1;
+  }
+  &--hidden {
+    display: none;
+  }
+}

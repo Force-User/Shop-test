@@ -1,0 +1,18 @@
+.header {
+  height: 83px;
+  @include flex();
+  user-select: none;
+  .header-buttons__button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 0.5s;
+    &:nth-child(n + 2) {
+      margin-left: 10px;
+    }
+    &:hover {
+      background-color: $color-dark;
+      color: $color-light;
+    }
+  }
+}

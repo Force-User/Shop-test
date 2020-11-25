@@ -1,0 +1,53 @@
+.banner {
+  height: 745px;
+  @include background-image("/image/banner/bannerImage1.jpg");
+
+  .wrapper {
+    height: 100%;
+    @include flex(flex-end, flex-end);
+  }
+  &-info {
+    @include flex(flex-start, space-between);
+    flex-direction: column;
+    &__text {
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 27px;
+    }
+    &__title {
+      text-transform: uppercase;
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 120px;
+    }
+  }
+  &-buttons {
+    &__button {
+      margin: 27px 0 100px;
+      @include Button();
+      background-color: $color-dark;
+      color: $color-light;
+      transition: 0.5s;
+      &:nth-child(n + 2) {
+        margin-left: 34px;
+      }
+      &:hover {
+        box-shadow: 0px 0px 1px 3px $color-dark;
+        text-shadow: 0 0 5px;
+      }
+    }
+  }
+}
+.banner-two {
+  height: 745px;
+  @include background-image("/image/banner/banner-2.jpg");
+  .wrapper {
+    height: 100%;
+    @include flex(flex-end, flex-start);
+  }
+}
+
+.search--here {
+  position: relative;
+  overflow: hidden;
+}

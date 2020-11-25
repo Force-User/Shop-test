@@ -1,0 +1,29 @@
+.search {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: $color-light;
+  box-shadow: inset 0 0 5px $color-dark;
+  border-radius: 0 0 30px 30px;
+  transition: 0.5s;
+  @include flex(center, flex-end);
+  &__input {
+    height: 100%;
+    flex-basis: 85%;
+  }
+  &__button {
+    height: 100%;
+    flex-basis: 10%;
+    border-radius: 0 0 30px 0;
+    transition: 0.5s;
+    &:hover {
+      color: $color-light;
+      background-color: $color-dark;
+    }
+  }
+  &--showing {
+    top: 0;
+  }
+}

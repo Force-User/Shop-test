@@ -1,0 +1,38 @@
+.information {
+  width: 532px;
+  .reciwe-updates {
+    @include flex(flex-start);
+    flex-direction: column;
+    &__title {
+      margin-bottom: 25px;
+      color: $color-dark;
+    }
+  }
+  .form {
+    width: 100%;
+    flex-basis: 100%;
+    &-input-area {
+      @include flex(center, space-between);
+      background-color: $color-light;
+      height: 45px;
+      border-radius: 5px;
+    }
+    &__input {
+      flex-basis: 80%;
+      margin-left: 25px;
+      height: 100%;
+    }
+    &__button {
+      height: 100%;
+      padding: 0 20px;
+      background: none;
+      font-weight: 600;
+      transition: 0.5s;
+      border-radius: 5px;
+      &:hover {
+        background-color: $color-dark;
+        color: $color-light;
+      }
+    }
+  }
+}

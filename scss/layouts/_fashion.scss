@@ -1,0 +1,47 @@
+.fashion {
+  .wrapper {
+    flex-direction: column;
+  }
+  &-content {
+    @include flex(center, space-between);
+    flex-direction: column;
+    padding-bottom: 110px;
+  }
+  &-info {
+    text-align: center;
+    margin-bottom: 70px;
+    &__title {
+      line-height: 30px;
+      margin-bottom: 15px;
+    }
+    &__text {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+}
+.product {
+  @include flex(center, space-between);
+  flex-wrap: wrap;
+  &-block:nth-child(n + 2) {
+    margin-left: 15px;
+  }
+  &-info {
+    margin-top: 38px;
+    &__text,
+    &__title {
+      font-size: 15px;
+    }
+  }
+  &-price {
+    @include flex(center, flex-start);
+    &__original {
+      text-decoration: line-through;
+      font-size: 15px;
+      margin-right: 20px;
+    }
+    &__current {
+      color: $color-current-price;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.clients {
+  @include flex();
+  padding: 50px 0;
+  .wrapper {
+    flex-direction: column;
+  }
+  &__title {
+    margin-bottom: 25px;
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+}
+.user-area {
+  @include flex(center, space-around);
+  flex-wrap: wrap;
+}
+.user {
+  @include flex(flex-start, space-around);
+  flex-direction: column;
+  border: 10px solid $color-dark;
+  width: 300px;
+  padding: 30px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px 1px;
+  border-radius: 15px 15px 15px 0;
+  & > span {
+    font-weight: 600;
+  }
+}
