@@ -1,0 +1,7 @@
+.footer {
+  height: 93px;
+  background-color: $color-light;
+  .wrapper {
+    @include flex();
+  }
+}

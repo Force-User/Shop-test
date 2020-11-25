@@ -1,0 +1,48 @@
+.styles {
+  padding-bottom: 120px;
+  .wrapper {
+    justify-content: center;
+  }
+  &-content {
+    @include flex(center, space-between);
+    flex-direction: column;
+    &__text {
+      line-height: 22px;
+    }
+  }
+  &-gallery {
+    @include flex(flex-start, space-between);
+    flex-wrap: wrap;
+    margin-top: 28px;
+    position: relative;
+
+    &__image:nth-child(1) {
+      margin-top: 87px;
+    }
+    &__image:nth-child(2) {
+      position: relative;
+      margin-left: 29px;
+    }
+    &__image:nth-child(3) {
+      position: absolute;
+      top: 50%;
+      left: 80%;
+      z-index: 1;
+      border: 22px solid $color-light;
+    }
+    &__link {
+      position: absolute;
+      top: 80%;
+      left: -100%;
+      color: $color-dark;
+      transition: 0.5s;
+      padding: 5px;
+      box-shadow: 0px 0px 3px 2px $color-dark;
+      &:hover {
+        background-color: $color-dark;
+        color: $color-light;
+        box-shadow: 0px 0px 3px 2px $color-light;
+      }
+    }
+  }
+}

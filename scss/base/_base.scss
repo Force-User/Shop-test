@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  background: none;
+}
+h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+button {
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.header,
+.banner,
+.catagory,
+.fashion,
+.styles,
+.banner-two,
+.contacts,
+.footer {
+  @include flex();
+}

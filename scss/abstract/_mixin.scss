@@ -1,0 +1,14 @@
+@mixin flex($vertical: center, $horizon: center) {
+  display: flex;
+  align-items: $vertical;
+  justify-content: $horizon;
+}
+@mixin background-image($src: "") {
+  background-image: url($src);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin Button {
+  padding: 4px 29px;
+}

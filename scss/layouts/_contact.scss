@@ -1,0 +1,27 @@
+.contacts {
+  padding: 115px 0 105px;
+  background-color: $color-background-contact;
+  .wrapper {
+    @include flex(flex-start, space-between);
+    flex-wrap: wrap;
+  }
+  &-content {
+    width: 405px;
+    @include flex(flex-start, space-between);
+    flex-direction: column;
+    .logo {
+      margin-bottom: 15px;
+    }
+    & > *:nth-child(n + 2) {
+      margin-top: 20px;
+    }
+    .contact-us {
+      display: flex;
+      flex-direction: column;
+      &__email {
+        color: $color-dark;
+        text-decoration: underline;
+      }
+    }
+  }
+}

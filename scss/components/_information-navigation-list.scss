@@ -1,0 +1,20 @@
+.information-lists {
+  @include flex(center, space-between);
+  flex-direction: row;
+  margin-top: 70px;
+  color: $color-dark;
+  .information-list {
+    &__title {
+      font-size: 25px;
+      font-weight: 600;
+    }
+    & > li {
+      &:nth-child(n + 2) {
+        margin-bottom: 20px;
+      }
+    }
+    &__link {
+      color: inherit;
+    }
+  }
+}

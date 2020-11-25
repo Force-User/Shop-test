@@ -1,0 +1,12 @@
+.navigation {
+    @include flex(center, space-between);
+    flex-direction: row;
+    text-transform: uppercase;;
+    &-list {
+        font-style: 18px;
+        cursor: pointer;
+        &__link:nth-child(n+1) {
+            margin-left:20px;
+        }
+    }
+}
