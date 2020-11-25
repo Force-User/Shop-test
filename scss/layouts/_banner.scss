@@ -1,6 +1,6 @@
 .banner {
   height: 745px;
-  @include background-image("/image/banner/bannerImage1.jpg");
+  @include background-image("../image/banner/bannerImage1.jpg");
 
   .wrapper {
     height: 100%;
@@ -40,7 +40,7 @@
 }
 .banner-two {
   height: 745px;
-  @include background-image("/image/banner/banner-2.jpg");
+  @include background-image("../image/banner/banner-2.jpg");
   .wrapper {
     height: 100%;
     @include flex(flex-end, flex-start);

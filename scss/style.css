@@ -5,7 +5,7 @@
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   list-style-type: none;
   text-decoration: none;
   background: none;
@@ -19,10 +19,10 @@ h1 {
 }
 
 h3 {
+  margin-bottom: 15px;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
-  margin-bottom: 15px;
 }
 
 button {
@@ -31,7 +31,14 @@ button {
   cursor: pointer;
 }
 
-.header, .banner, .catagory, .fashion, .styles, .banner-two, .contacts, .footer {
+.header,
+.banner,
+.catagory,
+.fashion,
+.styles,
+.banner-two,
+.contacts,
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,16 +71,16 @@ button {
   width: 30px;
   height: 30px;
   border-radius: 5px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.header .header-buttons__button:nth-child(n+2) {
+.header .header-buttons__button:nth-child(n + 2) {
   margin-left: 10px;
 }
 
 .header .header-buttons__button:hover {
-  background-color: #22262A;
+  background-color: #22262a;
   color: #fff;
 }
 
@@ -93,7 +100,7 @@ button {
 
 .banner {
   height: 745px;
-  background-image: url("/image/banner/bannerImage1.jpg");
+  background-image: url("../image/banner/bannerImage1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -144,10 +151,10 @@ button {
 .banner-buttons__button {
   margin: 27px 0 100px;
   padding: 4px 29px;
-  background-color: #22262A;
+  background-color: #22262a;
   color: #fff;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .banner-buttons__button:nth-child(n + 2) {
@@ -155,14 +162,14 @@ button {
 }
 
 .banner-buttons__button:hover {
-  -webkit-box-shadow: 0px 0px 1px 3px #000;
-          box-shadow: 0px 0px 1px 3px #000;
+  -webkit-box-shadow: 0px 0px 1px 3px #22262a;
+          box-shadow: 0px 0px 1px 3px #22262a;
   text-shadow: 0 0 5px;
 }
 
 .banner-two {
   height: 745px;
-  background-image: url("/image/banner/banner-2.jpg");
+  background-image: url("../image/banner/banner-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -231,12 +238,12 @@ button {
   left: 28px;
   background-color: #fff;
   padding: 4px 29px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .catagory-gallery__button:hover {
-  background-color: #22262A;
+  background-color: #22262a;
   color: #fff;
 }
 
@@ -394,16 +401,16 @@ button {
   position: absolute;
   top: 80%;
   left: -100%;
-  color: #22262A;
-  -webkit-transition: .5s;
-  transition: .5s;
+  color: #22262a;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   padding: 5px;
-  -webkit-box-shadow: 0px 0px 3px 2px #22262A;
-          box-shadow: 0px 0px 3px 2px #22262A;
+  -webkit-box-shadow: 0px 0px 3px 2px #22262a;
+          box-shadow: 0px 0px 3px 2px #22262a;
 }
 
 .styles-gallery__link:hover {
-  background-color: #22262A;
+  background-color: #22262a;
   color: #fff;
   -webkit-box-shadow: 0px 0px 3px 2px #fff;
           box-shadow: 0px 0px 3px 2px #fff;
@@ -411,7 +418,7 @@ button {
 
 .contacts {
   padding: 115px 0 105px;
-  background-color: #F2F8FC;
+  background-color: #f2f8fc;
 }
 
 .contacts .wrapper {
@@ -449,7 +456,7 @@ button {
   margin-bottom: 15px;
 }
 
-.contacts-content > *:nth-child(n+2) {
+.contacts-content > *:nth-child(n + 2) {
   margin-top: 20px;
 }
 
@@ -464,13 +471,13 @@ button {
 }
 
 .contacts-content .contact-us__email {
-  color: #22262A;
+  color: #22262a;
   text-decoration: underline;
 }
 
 .footer {
   height: 93px;
-  background-color: #E7F5F8;
+  background-color: #fff;
 }
 
 .footer .wrapper {
@@ -537,7 +544,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 10px solid #22262A;
+  border: 10px solid #22262a;
   width: 300px;
   padding: 30px;
   margin: 10px;
@@ -551,10 +558,10 @@ button {
 }
 
 .burger {
+  position: relative;
   width: 50px;
   height: 50px;
   display: none;
-  position: relative;
   z-index: 2;
 }
 
@@ -570,6 +577,7 @@ button {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   width: 300px;
   height: 100vh;
   display: -webkit-box;
@@ -585,14 +593,13 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 1;
   background-color: #fff;
   -webkit-box-shadow: 5px 0 5px 5px;
           box-shadow: 5px 0 5px 5px;
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .menu--hidden {
@@ -610,7 +617,7 @@ button {
   top: 0;
   left: 0;
   width: 100px;
-  background-color: #22262A;
+  background-color: #22262a;
 }
 
 .menu .navigation {
@@ -652,7 +659,7 @@ button {
   text-transform: uppercase;
   font-size: 28px;
   font-weight: 700;
-  color: #22262A;
+  color: #22262a;
 }
 
 .navigation {
@@ -703,7 +710,7 @@ button {
 
 .information .reciwe-updates__title {
   margin-bottom: 25px;
-  color: #22262A;
+  color: #22262a;
 }
 
 .information .form {
@@ -739,13 +746,13 @@ button {
   padding: 0 20px;
   background: none;
   font-weight: 600;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   border-radius: 5px;
 }
 
 .information .form__button:hover {
-  background-color: #22262A;
+  background-color: #22262a;
   color: #fff;
 }
 
@@ -764,7 +771,7 @@ button {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 70px;
-  color: #22262A;
+  color: #22262a;
 }
 
 .information-lists .information-list__title {
@@ -781,7 +788,7 @@ button {
 }
 
 .link {
-  color: #22262A;
+  color: #22262a;
 }
 
 .link:hover {
@@ -795,11 +802,11 @@ button {
   width: 100%;
   height: 40px;
   background-color: #fff;
-  -webkit-box-shadow: inset 0 0 5px #22262A;
-          box-shadow: inset 0 0 5px #22262A;
+  -webkit-box-shadow: inset 0 0 5px #22262a;
+          box-shadow: inset 0 0 5px #22262a;
   border-radius: 0 0 30px 30px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -822,13 +829,13 @@ button {
   -ms-flex-preferred-size: 10%;
       flex-basis: 10%;
   border-radius: 0 0 30px 0;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .search__button:hover {
   color: #fff;
-  background-color: #22262A;
+  background-color: #22262a;
 }
 
 .search--showing {
@@ -858,7 +865,7 @@ button {
 }
 
 .modal-head {
-  background-color: #22262A;
+  background-color: #22262a;
   height: 70px;
   width: 100%;
   border-radius: 0 0 5px 5px;
@@ -897,12 +904,12 @@ button {
 .modal__button {
   margin-top: 5px;
   padding: 5px 15px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .modal__button:hover {
-  background-color: #22262A;
+  background-color: #22262a;
   color: #fff;
   border-radius: 5px;
 }
@@ -921,7 +928,7 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 100Vh;
+  height: 100vh;
   background-color: #0000008f;
   z-index: 1;
 }
@@ -931,7 +938,7 @@ button {
 }
 
 @media (max-width: 1024px) {
-  .navigation-list__link:nth-child(n+1) {
+  .navigation-list__link:nth-child(n + 1) {
     margin-left: 10px;
   }
   .wrapper {
@@ -939,7 +946,7 @@ button {
     padding: 0 10px;
   }
   .catagory-gallery {
-        grid-template-areas: " image1 image1 " " image2 image3"  " image4 image4";
+        grid-template-areas: " image1 image1 " " image2 image3" " image4 image4";
   }
   .catagory-gallery__image > img {
     width: 100%;
@@ -986,12 +993,13 @@ button {
     margin-left: 5px;
   }
   .catagory-gallery {
-        grid-template-areas: " image1 " " image2 "  " image3 " " image4 ";
+        grid-template-areas: " image1 " " image2 " " image3 " " image4 ";
   }
   .catagory-gallery__image > img {
     width: 100%;
   }
-  .styles-gallery__image:nth-child(1) > img, .styles-gallery__image:nth-child(2) > img {
+  .styles-gallery__image:nth-child(1) > img,
+  .styles-gallery__image:nth-child(2) > img {
     width: 100%;
   }
   .styles-gallery__image:nth-child(3) {
